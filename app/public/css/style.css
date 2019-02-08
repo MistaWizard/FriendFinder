@@ -1,3 +1,25 @@
+body {
+    background-color: whitesmoke;
+}
+
 h3 {
     font-weight: bold;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: darkred;
+}
+
+#submit {
+    margin: 10px;
+    margin-top: 25px;
+}
+
+#name {
+    margin-bottom: 10px;
+}
+
+#questLove {
+    text-align: center;
 }
