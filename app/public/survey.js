@@ -17,7 +17,7 @@ let config = {
   
 for (let selector in config) {
     $(selector).chosen(config[selector]);
-}
+};
 
 // Capture the form inputs
 $("#submit").on("click", function(event) {
@@ -27,16 +27,15 @@ $("#submit").on("click", function(event) {
     function validateForm() {
         let isValid = true;
         $(".form-control").each(function() {
-        if ($(this).val() === "") {
-            isValid = false;
-        }
-    });
+            if ($(this).val() === "") {
+                isValid = false;
+            }
+        });
   
-    $(".chosen-select").each(function() {
-  
-        if ($(this).val() === "") {
-            isValid = false;
-        }
+        $(".chosen-select").each(function() {
+            if ($(this).val() === "") {
+                isValid = false;
+            }
         });
         return isValid;
     }
